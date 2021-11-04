@@ -11,7 +11,7 @@ const productUrl = "http://localhost:9090/product"
 })
 export class ProductService {
 
-
+  //DI
   constructor(public httpClient:HttpClient) { }
 
   getProducts() : Observable<Product[]>{

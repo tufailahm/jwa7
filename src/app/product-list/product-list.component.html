@@ -1,1 +1,22 @@
-<p>product-list works!</p>
+<table border="1" bgcolor="lightblue" cellspacing="10" cellpadding="10">
+    <tr>
+      <th>Product Id</th>
+      <th>Product Name</th>
+      <th>Quantity On Hand</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor="let prod of products">
+      <td>
+        {{prod.productId}}
+      </td>
+      <td>
+        {{prod.productName }}
+      </td>
+      <td>
+        {{prod.quantityOnHand}}
+      </td>
+      <td>
+        {{prod.price | currency:'USD' }} 
+      </td>
+    </tr>
+</table>

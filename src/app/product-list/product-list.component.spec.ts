@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProductListComponent } from './product-list.component';
@@ -6,8 +7,9 @@ describe('ProductListComponent', () => {
   let component: ProductListComponent;
   let fixture: ComponentFixture<ProductListComponent>;
 
- /*  beforeEach(async () => {
+  beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports : [HttpClientTestingModule],
       declarations: [ ProductListComponent ]
     })
     .compileComponents();
@@ -21,5 +23,5 @@ describe('ProductListComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  }); */
+  }); 
 });
