@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+
+<h2>Liked counter is : {{ likedCounter }} </h2>
+
+<div>
+    <button (click)="incrementLikedCounter()" class="button-like">Like</button>|
+    <button (click)="decrementLikedCounter()" class="button-unlike">Unlike</button>
+    <button (click)="resetLikedCounter()" class="button-reset">Reset</button>
+</div>
