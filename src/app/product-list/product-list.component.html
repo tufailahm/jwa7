@@ -1,3 +1,8 @@
+<div>
+  <h1>
+    Welcome to {{ title | uppercase }}!
+  </h1>
+</div>
 <table border="1" bgcolor="lightblue" cellspacing="10" cellpadding="10">
     <tr>
       <th>Product Id</th>
@@ -10,7 +15,7 @@
         {{prod.productId}}
       </td>
       <td>
-        {{prod.productName }}
+        {{prod.productName | uppercase}}
       </td>
       <td>
         {{prod.quantityOnHand}}

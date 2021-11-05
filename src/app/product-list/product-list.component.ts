@@ -9,6 +9,7 @@ import { ProductService } from '../services/product.service';
 })
 export class ProductListComponent implements OnInit {
 
+  title = "revature product app";
   products: Product[] = [];
 
   constructor(public productService:ProductService) { }

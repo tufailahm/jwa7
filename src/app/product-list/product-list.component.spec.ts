@@ -24,4 +24,14 @@ describe('ProductListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   }); 
+
+  it('should render title in h1 tag in upper case' , () => {
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain(' Welcome to REVATURE PRODUCT APP! ')
+
+  })
+
+  //test case to check whether the price is in $ or not
+  
 });
