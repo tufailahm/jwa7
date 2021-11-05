@@ -1,5 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 
 import { ProductListComponent } from './product-list.component';
 
@@ -9,10 +10,10 @@ describe('ProductListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports : [HttpClientTestingModule],
-      declarations: [ ProductListComponent ]
+      imports: [HttpClientTestingModule],
+      declarations: [ProductListComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -23,9 +24,9 @@ describe('ProductListComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  }); 
+  });
 
-  it('should render title in h1 tag in upper case' , () => {
+  it('should render title in h1 tag in upper case', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain(' Welcome to REVATURE PRODUCT APP! ')
@@ -33,5 +34,11 @@ describe('ProductListComponent', () => {
   })
 
   //test case to check whether the price is in $ or not
-  
+ /*  it('should render price in h2 tag in $', () => {
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    //  expect(By.css('#price')).toContain("$")
+    expect(compiled.querySelector("#price").textContent).toContain("$");
+
+  }) */
 });

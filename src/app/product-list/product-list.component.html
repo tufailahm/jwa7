@@ -1,3 +1,5 @@
+<h3>Please reach me on this phone number in case of an emergency : {{ phoneNumber | mobileNumber  }}</h3>
+
 <div>
   <h1>
     Welcome to {{ title | uppercase }}!
@@ -21,7 +23,7 @@
         {{prod.quantityOnHand}}
       </td>
       <td>
-        {{prod.price | currency:'USD' }} 
+           <div id="price" class="price"> {{prod.price | currency:'USD' }} </div>
       </td>
     </tr>
 </table>

@@ -8,7 +8,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
-import { CartComponent } from './cart/cart.component'
+import { CartComponent } from './cart/cart.component';
+import { MobileNumberPipe } from './pipes/mobile-number.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { CartComponent } from './cart/cart.component'
     AboutusComponent,
     ProductListComponent,
     HomeComponent,
-    CartComponent
+    CartComponent,
+    MobileNumberPipe
   ],
   imports: [
     BrowserModule,

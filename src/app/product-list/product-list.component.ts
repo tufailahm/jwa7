@@ -12,6 +12,8 @@ export class ProductListComponent implements OnInit {
   title = "revature product app";
   products: Product[] = [];
 
+    public phoneNumber :string  = "6514171511";
+
   constructor(public productService:ProductService) { }
 
   ngOnInit(): void {
