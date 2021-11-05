@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { MobileNumberPipe } from './pipes/mobile-number.pipe';
 
 let router: Router
 let app: AppComponent
@@ -24,7 +25,7 @@ describe('AppComponent', () => {
         RouterTestingModule.withRoutes(routes),HttpClientTestingModule
       ],
       declarations: [
-        AppComponent, WelcomeComponent, AboutusComponent, HomeComponent, CartComponent, ProductListComponent
+        AppComponent, WelcomeComponent, AboutusComponent, HomeComponent, CartComponent, ProductListComponent,MobileNumberPipe
       ],
     }).compileComponents();
     router = TestBed.get(Router)

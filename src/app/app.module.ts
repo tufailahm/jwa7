@@ -9,7 +9,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
-import { MobileNumberPipe } from './pipes/mobile-number.pipe'
+import { MobileNumberPipe } from './pipes/mobile-number.pipe';
+import { HoverChangeColorDirective } from './directives/hover-change-color.directive'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { MobileNumberPipe } from './pipes/mobile-number.pipe'
     ProductListComponent,
     HomeComponent,
     CartComponent,
-    MobileNumberPipe
+    MobileNumberPipe,
+    HoverChangeColorDirective
   ],
   imports: [
     BrowserModule,
